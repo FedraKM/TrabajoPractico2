@@ -19,7 +19,7 @@ Los principios SOLID son cinco reglas de diseño orientado a objetos (POO) propu
 
 ---
  
-## S — Principio de Responsabilidad Única (SRP)
+
 ![SRP](https://img.shields.io/badge/S%20%E2%80%94%20SRP-Principio%20de%20Responsabilidad%20%C3%9Anica-e74c3c?style=for-the-badge&logoColor=white)
  
 ### ¿En qué consiste?
@@ -53,7 +53,7 @@ class RepositorioFactura { void guardar(Factura f)   { ... } }
 - Las clases separadas se pueden reutilizar en otros contextos más fácilmente.
 ---
  
-## O — Principio Abierto/Cerrado (OCP)
+
 ![OCP](https://img.shields.io/badge/O%20%E2%80%94%20OCP-Principio%20Abierto%2FCerrado-e67e22?style=for-the-badge&logoColor=white)
  
 ### ¿En qué consiste?
@@ -92,7 +92,7 @@ class Programador extends Empleado {
 - Se evitan los bloques condicionales que crecen sin control.
 ---
  
-## L — Principio de Sustitución de Liskov (LSP)
+
 ![LSP](https://img.shields.io/badge/L%20%E2%80%94%20LSP-Principio%20de%20Sustituci%C3%B3n%20de%20Liskov-27ae60?style=for-the-badge&logoColor=white)
  
 ### ¿En qué consiste?
@@ -125,7 +125,7 @@ for (Empleado e : empleados) {
 - Se complementa muy bien con OCP: se puede extender sin modificar.
 ---
  
-## I — Principio de Segregación de Interfaces (ISP)
+
 ![ISP](https://img.shields.io/badge/I%20%E2%80%94%20ISP-Principio%20de%20Segregaci%C3%B3n%20de%20Interfaces-2980b9?style=for-the-badge&logoColor=white)
  
 ### ¿En qué consiste?
@@ -169,7 +169,7 @@ class Escorpion extends Animal {
 - Agregar un nuevo método a `IMascota` no afecta a `Escorpion` ni a ningún otro animal.
 ---
  
-## D — Principio de Inversión de Dependencias (DIP)
+
 ![DIP](https://img.shields.io/badge/D%20%E2%80%94%20DIP-Principio%20de%20Inversi%C3%B3n%20de%20Dependencias-8e44ad?style=for-the-badge&logoColor=white)
  
 ### ¿En qué consiste?
