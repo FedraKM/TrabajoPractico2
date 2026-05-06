@@ -223,4 +223,14 @@ class Volvo {
 - El sistema queda mucho más flexible y modular.
 ---
 
+## Cuadro Comparativo
 
+| Principio | Problema que resuelve | Cuándo usarlo | Señales de violación |
+|---|---|---|---|
+|![SRP](https://img.shields.io/badge/S-e74c3c?style=for-the-badge) | Clases con múltiples responsabilidades acopladas | Cuando una clase tiene más de una razón para cambiar o es difícil de testear | Clase muy larga; métodos sin relación; cambios frecuentes en áreas distintas |
+| ![OCP](https://img.shields.io/badge/O-e67e22?style=for-the-badge) | Modificar código ya probado al agregar funcionalidad | Cuando la lógica crece con nuevos casos o hay variantes frecuentes | Cadenas de `if/switch` que crecen cada vez que se agrega un caso nuevo |
+| ![LSP](https://img.shields.io/badge/L-2ecc71?style=for-the-badge) | Subclases que rompen el comportamiento de la clase base | Al diseñar jerarquías de herencia o usar polimorfismo | Subclase lanza `UnsupportedOperationException` o deja métodos vacíos |
+| ![ISP](https://img.shields.io/badge/I-3498db?style=for-the-badge)  | Interfaces con métodos irrelevantes para sus implementadores | Al definir contratos entre módulos con necesidades distintas | Implementaciones con métodos vacíos o que lanzan excepciones |
+| ![DIP](https://img.shields.io/badge/D-9b59b6?style=for-the-badge) | Acoplamiento directo a implementaciones concretas | Acceso a BD, APIs externas o código que deba ser testeable | `new ConcreteClass()` dentro de clases de alto nivel |
+
+> Los principios SOLID no son reglas absolutas, sino guías de diseño. Aplicarlos con criterio y en el contexto adecuado produce sistemas Java más robustos y mantenibles.
