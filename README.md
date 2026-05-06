@@ -16,3 +16,8 @@ Los principios SOLID son cinco reglas de diseño orientado a objetos (POO) propu
 | ![LSP](https://img.shields.io/badge/L-2ecc71?style=for-the-badge) | Principio de Sustitución de Liskov (Liskov Substitution Principle) |
 | ![ISP](https://img.shields.io/badge/I-3498db?style=for-the-badge) | Principio de Segregación de Interfaces (Interface Segregation Principle) |
 | ![DIP](https://img.shields.io/badge/D-9b59b6?style=for-the-badge) | Principio de Inversión de Dependencias (Dependency Inversion Principle) |
+
+S — Principio de Responsabilidad Única (SRP)
+Este principio establece que una clase debe tener una sola razón para cambiar, es decir, debe
+encargarse de una única responsabilidad dentro del sistema. Si una clase hace demasiadas cosas a la
+vez, cualquier cambio en una de ellas puede afectar a las demás de forma inesperada. Truco para detectarlo: si al describir lo que hace una clase tenés que usar la palabra "y", probablemente tiene más de una responsabilidad.
